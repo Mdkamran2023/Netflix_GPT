@@ -29,6 +29,14 @@
 - Update Store with Trailer Video Data
 - Embedded the Utube video and make it autoplay and mute
 - Adds TailwindCSS 
+- Build Secondary Component
+- Build Movie List
+- Build Movie Card
+- Tmdb Image CDN URL
+- Made the browse page amazing with tailwind css
+- usePopularMovies Hooks
+- adds useUpcomingMovies Hooks added
+- 
 
 
 # Features

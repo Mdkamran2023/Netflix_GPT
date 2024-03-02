@@ -1,16 +1,15 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-import MovieList from './MovieList';
-import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
-
+import React from "react";
+import { useSelector } from "react-redux";
+import MovieList from "./MovieList";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 const SecondaryContainer = () => {
-  
-  const movies= useSelector((store) => store.movies)
-  useNowPlayingMovies()
-  console.log(movies)
+  const movies = useSelector((store) => store.movies);
+  useNowPlayingMovies();
+  console.log(movies);
   return (
-   movies.nowPlayingMovies && (<div className='  bg-black '>
+    movies.nowPlayingMovies && (
+      <div className=" w-screen bg-black ">
         {/* 
       MovieList-Popular
           MovieCard*N
@@ -18,16 +17,19 @@ const SecondaryContainer = () => {
       MovieList-Trending
       MovieList- Horror
       */}
-      <div className='-mt-52  pl-12 relative z-20'>
-      <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies}/>
-      <MovieList title={"Trending"} movies={movies.nowPlayingMovies}/>
-    movies.popularMovies &&(<MovieList title={"Popular"} movies={movies.popularMovies}/>)
-      <MovieList title={"Upcoming movies"} movies={movies.nowPlayingMovies}/>
-      <MovieList title={"Sci-fi"} movies={movies.nowPlayingMovies}/>
+        <div className="-mt-52  pl-12 relative z-20">
+          <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
+          movies.popularMovies &&(
+          <MovieList title={"Popular"} movies={movies.popularMovies} />)
+          movies.upcomingMovies && (
+          <MovieList title={"Upcoming movies"} movies={movies.upcomingMovies} />
+          )
+          <MovieList title={"Sci-fi"} movies={movies.nowPlayingMovies} />
+        </div>
       </div>
-    </div>)
-
-  )
-}
+    )
+  );
+};
 
 export default SecondaryContainer;
