@@ -1,11 +1,15 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import MovieList from "./MovieList";
-import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+// import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+// import usePopularMovies from "../hooks/usePopularMovies";
+// import useUpcomingMovies from "../hooks/useUpcomingMovies";
 
 const SecondaryContainer = () => {
   const movies = useSelector((store) => store.movies);
-  useNowPlayingMovies();
+  // useNowPlayingMovies();
+  // usePopularMovies();
+  // useUpcomingMovies();
   console.log(movies);
   return (
     movies.nowPlayingMovies && (

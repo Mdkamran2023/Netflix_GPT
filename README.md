@@ -36,6 +36,9 @@
 - Made the browse page amazing with tailwind css
 - usePopularMovies Hooks
 - adds useUpcomingMovies Hooks added
+- Gpt Search Page
+- Gpt Search Bar
+- multi-language feature in GptSearchPage (smart)
 - 
 
 
