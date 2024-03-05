@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
 import { addTrailerVideo } from "../utils/moviesSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 
  const useMovieTrailer=(movieId)=>{
     const dispatch = useDispatch();
+
+    const trailerVideo= useSelector((store)=>store.movies.trailerVideo)
 
     // fetch trailer video && updating the store with trailer video data
     const getMovieVideos = async () => {  
@@ -20,7 +22,8 @@ import { useDispatch } from "react-redux";
         console.log(trailer);
       };
       useEffect(() => {
-        getMovieVideos();
+        // api should be called only if it is not already called ---memoization
+     !trailerVideo && getMovieVideos();
       }, []);
 
  }

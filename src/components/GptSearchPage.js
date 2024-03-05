@@ -10,7 +10,7 @@ const GptSearchPage = () => {
        Gpt Search Bar 
       Gpt Movie Suggestion
       */}
-      <div className="absolute -z-30 ">
+      <div className="fixed -z-30 w-screen">
         <img
           className=""
           alt="Logo"

@@ -9,7 +9,7 @@ console.log(movies);
       <div className=' flex whitespace-nowrap overflow-x-auto no-scrollbar scroll-smooth overflow-y-hidden'>
         <div className='flex'>
           {movies.map((movie) =>(
-             <MovieCard key={movie.id} posterPath={movie.poster_path}/>))}
+             <MovieCard key={movie.id} posterPath={movie.poster_path} title={movie.original_title}  releaseDate={movie.release_date} overview={movie.overview} />))}
            
         </div>
       </div>
