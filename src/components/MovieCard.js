@@ -20,7 +20,7 @@ const MovieCard = ({ posterPath, title, releaseDate, overview }) => {
     <div className='relative' onMouseEnter={handleMouseEnter} 
     onMouseLeave={handleMouseLeave}
     >
-      <div className='w-48 pr-4 hover:scale-x-110 hover:scale-y-110 hover:cursor-pointer relative z-20'>
+      <div className='w-40 md:w-48 pr-4 hover:scale-x-110 hover:scale-y-110 hover:cursor-pointer relative z-20'>
         <img
           className='w-[100%] h-full'
           alt='Movie Card'

@@ -39,7 +39,14 @@
 - Gpt Search Page
 - Gpt Search Bar
 - multi-language feature in GptSearchPage (smart)
-- 
+- Gpt Open AI API key
+- Gpt Search  API call
+- Fetched gptMoviesSuggestions from TMDB
+- created gptslice added data
+- Reused Movie List Component to make movie suggestion container
+- Memoization
+- Adding .env file to gitignore
+- Made responsive
 
 
 # Features
