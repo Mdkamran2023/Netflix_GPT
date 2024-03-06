@@ -12,7 +12,7 @@ const SecondaryContainer = () => {
   // useUpcomingMovies();
   console.log(movies);
   return (
-    movies.nowPlayingMovies && (
+   movies.nowPlayingMovies && (
       <div className=" w-screen bg-black ">
         {/* 
       MovieList-Popular
@@ -24,15 +24,13 @@ const SecondaryContainer = () => {
         <div className=" mt-0 md:-mt-28 lg:-mt-52 pl-4 md:pl-12 relative z-20">
           <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
           <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
-          movies.popularMovies &&(
-          <MovieList title={"Popular"} movies={movies.popularMovies} />)
-          movies.upcomingMovies && (
-          <MovieList title={"Upcoming movies"} movies={movies.upcomingMovies} />
-          )
+          {movies.popularMovies && <MovieList title={"Popular"} movies={movies.popularMovies} />}
+         { movies.upcomingMovies && <MovieList title={"Upcoming movies"} movies={movies.upcomingMovies} />} 
           <MovieList title={"Sci-fi"} movies={movies.nowPlayingMovies} />
         </div>
       </div>
     )
+   
   );
 };
 
