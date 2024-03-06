@@ -1,9 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faInfoCircle } from "@fortawesome/free-solid-svg-icons"; // Import the play icon
+import { useDispatch } from "react-redux";
+import { unmuteAudio } from "../utils/videoSlice";
 
 const VideoTitle = ({ title, overview }) => {
-  const videoPlay = () => {};
+  const dispatch = useDispatch();
+
+  const videoPlay = () => {
+    dispatch(unmuteAudio());
+  };
 
   return (
     <div className="w-screen aspect-video pt-[15%]  lg:mt-5 xl:mt-0 px-6 md:px-16 absolute  bg-gradient-to-r from-black">
