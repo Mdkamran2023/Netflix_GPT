@@ -71,11 +71,11 @@ const GptSearchBar = () => {
         <input
           ref={searchText}
           type="text"
-          className="p-4 m-4 col-span-9"
+          className="p-4 m-4 col-span-9 max-sm:p-2 max-sm:m-2"
           placeholder={lang[langKey].gptSearchPlaceHolder}
         ></input>
         <button
-          className="py-2 px-4 bg-red-600 text-white rounded-lg col-span-3 m-4 "
+          className="py-2 px-4 bg-red-600 text-white rounded-lg col-span-3 m-4 max-sm:px-2 max-sm:m-2 "
           // onClick={handleGptSearchClick}
           onClick={handleGptSearchFromTMDB}
         >
