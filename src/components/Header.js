@@ -75,7 +75,7 @@ const Header = () => {
         <div className="flex p-2 mx-auto md:mx-0">
           {showGptSearch && (
             <select
-              className="p-2 m-2 bg-gray-900  text-white"
+              className="p-2 m-2 bg-gray-900  text-white max-sm:ml-1"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -95,7 +95,7 @@ const Header = () => {
           <img className="w-12 h-12" alt="usericon" src={user?.photoURL}></img>
           <button
             onClick={handleSignOut}
-            className="m-2  px-2 font-semibold text-white text-xl whitespace-nowrap hover:opacity-80 mix-blend-light"
+            className="m-2  px-2 font-semibold text-white text-xl whitespace-wrap hover:opacity-80 mix-blend-light"
           >
             Sign Out
           </button>
