@@ -75,7 +75,7 @@ const Header = () => {
         <div className="flex p-2 mx-auto md:mx-0">
           {showGptSearch && (
             <select
-              className="p-2 m-2 bg-gray-900  text-white"
+              className="p-2 m-2 bg-gray-900  text-white max-sm:m-0"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
