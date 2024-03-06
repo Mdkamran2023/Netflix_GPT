@@ -21,12 +21,12 @@ const VideoTitle = ({ title, overview }) => {
       </p>
       <div className="my-2 xl:my-0">
         <button
-          className="bg-white py-1 md:py-2 px-3 md:px-14 mx-0 md:mx-2 my-2 md:my-0  rounded-md md:text-xl text-slate-900 hover:bg-opacity-60 text-sm sm:text-md"
+          className="bg-white py-1 md:py-1 lg:py-2 px-3 md:px-10 lg:px-14 mx-0 md:mx-2 my-2 md:my-0  rounded-md  text-slate-900 hover:bg-opacity-60 text-sm sm:text-md md:text-xl max-md:mx-2"
           onClick={videoPlay}
         >
           <FontAwesomeIcon icon={faPlay} /> Play
         </button>
-        <button className="hidden md:inline-block bg-slate-700 mx-2 text-white p-2 px-14 rounded-md font-medium hover:opacity-60">
+        <button className=" bg-slate-700  text-white py-1 md:py-1 lg:py-2 px-3 md:px-10 lg:px-14 mx-0 md:mx-2 my-2 md:my-0 rounded-md font-medium hover:opacity-60 text-sm sm:text-md md:text-xl">
           {" "}
           <FontAwesomeIcon icon={faInfoCircle} /> More Info
         </button>
