@@ -23,8 +23,8 @@ import { useDispatch,useSelector } from "react-redux";
       };
       useEffect(() => {
         // api should be called only if it is not already called ---memoization
-       !trailerVideo && getMovieVideos();
-      }, []);
+        getMovieVideos();
+      }, [movieId]);
 
  }
 
