@@ -1,4 +1,4 @@
-# [Netflix GPT Project]{ https://netflixgpt-9484f.web.app}
+ [Netflix GPT Project]{ https://netflixgpt-9484f.web.app}
 
 This project is a Netflix clone with an added feature of movie suggestions powered by GPT-3. It's built using React and Tailwind CSS, and it's integrated with Firebase for backend services. The project is deployed to production and is responsive to different screen sizes.
 
