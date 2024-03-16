@@ -75,7 +75,7 @@ const Header = () => {
         <div className="flex p-2 mx-auto md:mx-0">
           {showGptSearch && (
             <select
-              className="p-2 m-2 bg-gray-900  text-white max-sm:m-0"
+              className="p-2 m-2 bg-gray-900  text-white max-sm:m-0 "
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -86,12 +86,15 @@ const Header = () => {
               ))}
             </select>
           )}
+
           <button
-            className="py-2 px-4 m-2 bg-purple-800 text-white "
             onClick={handleGptSearchClick}
+            className="py-2 px-4 m-2 bg-purple-800 text-white rounded-md shadow-md hover:bg-purple-700 transition duration-300 ease-in-out"
           >
-          {showGptSearch ?"Homepage" :" GPT Search"} 
+            {" "}
+            {showGptSearch ? "Homepage" : " GPT Search"}
           </button>
+
           <img className="w-12 h-12" alt="usericon" src={user?.photoURL}></img>
           <button
             onClick={handleSignOut}
